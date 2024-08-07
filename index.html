@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Compiler Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="buttons">
+                    <span class="close" title="Close"></span>
+                    <span class="minimize" title="Minimize"></span>
+                    <span class="maximize" title="Maximize"></span>
+                </div>
+                <div class="title">Terminal</div>
+            </div>
+            <div class="terminal-body">
+                <pre id="output"></pre>
+                <textarea id="commandInput" rows="4" autofocus></textarea>
+            </div>
+        </div>
+        <input type="file" id="fileInput" webkitdirectory multiple>
+        
+        <div class="system-options">
+            <h3>Select Target Architectures and OS</h3>
+            <label><input type="checkbox" name="targets" value="x86_64-linux"> x86_64 (Linux)</label>
+            <label><input type="checkbox" name="targets" value="arm-linux"> ARM (Linux)</label>
+            <label><input type="checkbox" name="targets" value="x86_64-win"> x86_64 (Windows)</label>
+            <label><input type="checkbox" name="targets" value="arm-win"> ARM (Windows)</label>
+            <label><input type="checkbox" name="targets" value="x86_64-macos"> x86_64 (macOS)</label>
+            <label><input type="checkbox" name="targets" value="arm-macos"> ARM (macOS)</label>
+            <!-- Add more options as needed -->
+        </div>
+        
+        <button id="uploadButton">Upload and Compile</button>
+        <a id="downloadLink" style="display:none;" href="#">Download Compiled Files</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
