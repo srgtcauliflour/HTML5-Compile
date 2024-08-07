@@ -1,0 +1,135 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Light black background */
+    color: #d4d4d4; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #2d2d2d; /* Slightly darker black for container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Terminal styling */
+.terminal {
+    background-color: #000; /* Black background for terminal */
+    color: #00ff00; /* Lime green text */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.terminal-header {
+    background-color: #333; /* Darker black for header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444; /* Slight border for separation */
+}
+
+.terminal-header .buttons {
+    display: flex;
+}
+
+.terminal-header .buttons span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000; /* Red for close button */
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.terminal-header .buttons .minimize {
+    background-color: #ffff00; /* Yellow for minimize button */
+}
+
+.terminal-header .buttons .maximize {
+    background-color: #00ff00; /* Lime green for maximize button */
+}
+
+.terminal-body {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #000; /* Black background for body */
+    color: #00ff00; /* Lime green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for terminal feel */
+}
+
+#commandInput {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1e1e1e; /* Dark background for input */
+    color: #00ff00; /* Lime green text */
+    border: 1px solid #333; /* Border matching terminal theme */
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#uploadButton {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Lime green button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+#uploadButton:hover {
+    background-color: #00cc00; /* Darker green on hover */
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 10px;
+    color: #00ff00; /* Lime green link */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#downloadLink:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* System options styling */
+.system-options {
+    margin-top: 20px;
+}
+
+.system-options h3 {
+    margin-bottom: 10px;
+    color: #00ff00; /* Lime green heading */
+}
+
+.system-options label {
+    display: block;
+    margin: 5px 0;
+    color: #d4d4d4; /* Light grey text for labels */
+}
+
+.system-options input[type="checkbox"] {
+    margin-right: 10px;
+}
